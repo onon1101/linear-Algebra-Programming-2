@@ -24,5 +24,5 @@ det matrix = (solvePolPositive $ matrixToPol matrix) : (solvePolNega $ matrixToP
 solveXYPoly :: (Num a) => a -> a -> a
 solveXYPoly x1 eigenvalue = x1 - eigenvalue
 
--- printPoly :: (Num a) => [a] -> String
--- printPoly (x1: x2 : _) = x1 ++ "x_1 " ++ x2 ++ "x_2 = 0"  
+printPoly :: (Num a, Show a) => [a] -> String
+printPoly (x1 : x2 : _) = show x1 ++ "x_1+ " ++ show x2 ++ "x_2 = 0"

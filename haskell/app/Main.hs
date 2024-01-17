@@ -15,5 +15,6 @@ eigenvector ev (x1 : x2 : x3 : x4 : _) = ((x1 - ev) `div` (solveGCD x1 x4 ev)) :
 main :: IO ()
 main = do
   -- putStrLn $ show $ det matrix_A
+  putStrLn $ printPoly $ eigenvector 4 matrix_A
 
-  putStrLn $ show $ eigenvector 4 [1, 2, 3, 2]
+-- putStrLn $ show $ eigenvector 4 [1, 2, 3, 2]
